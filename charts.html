@@ -35,15 +35,22 @@
 
                     // You can add any additional account level key-values here,
                     // as long as it's not one of the above reserved names.
+                },
+                events:{
+                    ready: function(){
+                        
+                        pendo.track("Track Event Test", {
+                            id: 'Test Visitor 1',
+                            works: "True"
+                        });
+                        
+                        pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");  
+                    }
                 }
             });
     })('c7d0b45c-15b8-4407-75f2-016790b97d15');
 
-        pendo.track("Track Event Test", {
-            id: 'Test Visitor 1',
-            works: "True"
-        });
-        pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");  
+ 
         
     </script>
   
