@@ -37,14 +37,17 @@
                     // as long as it's not one of the above reserved names.
                 },
                 events:{
-                    ready: function(){
+                    guidesLoaded: function(){
                         
-                        pendo.track("Track Event Test", {
-                            id: 'Test Visitor 1',
-                            works: "True"
-                        });
-                        
-                        pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");  
+                        setTimeout(() => {
+                            pendo.track("Track Event Test", {
+                                id: 'Test Visitor 1',
+                                works: "True"
+                            });
+                            
+                            pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");                            
+                        }, "500")
+
                     }
                 }
             });
