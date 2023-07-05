@@ -40,18 +40,14 @@
                     guidesLoaded: function(){
                         
                         setTimeout(() => {
+                            
                             pendo.track("Track Event Test", {
                                 //id: 'Test Visitor 1', --> not needed for Client Side Track events
                                 works: "True"
                             });
                             
-                            // Checking the property value and calling the function
-                            if (pendo && pendo.track && pendo.track.properties && pendo.track.properties.works === "True") {
-                                    console.log("works property is true!");
-                                    pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");
-                            } else{
-                                console.log(pendo.track.properties.works + "broken")
-                            }
+                            console.log("works property is true!");
+                            pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");
                             
                         }, "500")
 
