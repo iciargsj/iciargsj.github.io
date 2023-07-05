@@ -43,16 +43,10 @@
                             
                             pendo.track("Track Event Test", {
                                 //id: 'Test Visitor 1', --> not needed for Client Side Track events
-                                works: "True"
+                                property1: "True"
                             });
                             
-                            if (pendo && pendo.track && pendo.track.properties && pendo.track.properties.hasOwnProperty('works') && pendo.track.properties.works === "True") {
-                                console.log("works!");
-                                pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");
-}
-else {
-    console.log("it doesn't work")
-}
+                            pendo.showGuideById("8vwwnLdZaeGiy8mavpWmAslAN84");
                             
                             
                         }, "500")
