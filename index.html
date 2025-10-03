@@ -14,8 +14,10 @@
             // Call this whenever information about your visitors becomes available
             // Please use Strings, Numbers, or Bools for value types.
             
-            //REGULAR INITIALIZE
-/*            pendo.initialize({
+
+
+            /*//REGULAR INITIALIZE
+            pendo.initialize({
                 visitor: {
                     id:              'Test Visitor 1',   // Required if user is logged in
                     plan:            'coal',
@@ -47,7 +49,8 @@
                 }
             });*/
 
-            //INITIALIZE TO EXCLUDE NON GUIDE ANALYTICS
+            
+            /*//INITIALIZE TO EXCLUDE NON GUIDE ANALYTICS
             pendo.initialize({
                 visitor: {
                     id:              'visitor123_excludenonguideanalytics',
@@ -61,25 +64,25 @@
                     name:         'Account 123 Excludenonguideanalytics'
                 },
                 excludeNonGuideAnalytics: true
-            });
+            });*/
 
-/*
+
             //INITIALIZE TO EXCLUDE ANALYTICS EVENTS
             pendo.initialize({
                 visitor: {
-                    id:              'visitor1_excludenonguideanalytics',
-                    name:            'Visitor 1 Excludenonguideanalytics'
-                    email:           'visitor1_excludenonguideanalytics@pendo.io',
-                    favorite_plant:  'orchid',
-                    favorite_fruit:  'mango'
+                    id:              'visitorabc_excludeanalyticsevents',
+                    name:            'Visitor ABC Excludeanalyticsevents'
+                    email:           'visitorabc_excludeanalyticsevents@pendo.io',
+                    favorite_plant:  'tulip',
+                    favorite_fruit:  'cherries'
                 },
                 account: {
-                    id:           'account1_excludenonguideanalytics'
-                    name:         'Account 1 Excludenonguideanalytics',
+                    id:           'accountabc_excludeanalyticsevents'
+                    name:         'Account ABC Excludeanalyticsevents',
                 },
                 analytics:
                     excludeEvents: ['load', 'click', 'focus', 'submit', 'change', 'track']
-            });*/
+            });
 
     })('c7d0b45c-15b8-4407-75f2-016790b97d15');
 
