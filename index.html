@@ -16,7 +16,7 @@
             
 
 
-            //REGULAR INITIALIZE
+            /*//REGULAR INITIALIZE
             pendo.initialize({
                 visitor: {
                     id:              'Test Visitor 1',   // Required if user is logged in
@@ -47,23 +47,25 @@
                     // You can add any additional account level key-values here,
                     // as long as it's not one of the above reserved names.
                 }
-            });
+            });*/
 
  
 
-            /*//INITIALIZE TO COLLECT ALL ANALYTICS
+            //INITIALIZE TO COLLECT ALL ANALYTICS
             pendo.initialize({
                 visitor: {
-                    id:                                     'Visitor1_IncludeAllAnalytics',
-                    name:                                   'Angela',
-                    favorite_planet:                        'Earth',                    
-                    favorite_food_include_all_analytics:    'pizza' 
+                    id:                                         'Visitor_IncludeAllAnalytics',
+                    name:                                       'Angela',
+                    planet:                                     'Earth',                    
+                    favorite_season_include_all_analytics:      'Winter' 
                 },
                 account: {
-                    id:                                     'Account1_IncludeAllAnalytics',
-                    name:                                   "Angela's Company",
+                    id:                                         'Account_IncludeAllAnalytics',
+                    name:                                       "Angela's Company",
+                    industry:                                   'Pet Industry',
+                    hq_include_all_analytics:                   'US'
                 }
-            });*/
+            });
 
 
 
@@ -72,15 +74,17 @@
             /*//INITIALIZE TO EXCLUDE NON GUIDE ANALYTICS
             pendo.initialize({
                 visitor: {
-                    id:                                     'Visitor2_ExcludeNonGuideAnalytics',
-                    name:                                   'Iciar',
-                    favorite_planet:                        'Saturn',                    
-                    favorite_country_include_all_analytics: 'sushi' 
+                    id:                                         'Visitor_ExcludeNonGuideAnalytics',
+                    name:                                       'Iciar',
+                    planet:                                     'Saturn',                    
+                    favorite_season_exclude_non_guide_analytics:'Summer' 
                 },
                 account: {
-                    id:           'account123_excludenonguideanalytics',
-                    name:         'Account 123 Excludenonguideanalytics'
-                },
+                    id:                                         'Account_ExcludeNonGuideAnalytics',
+                    name:                                       "Iciar's Company",
+                    industry:                                   'Software',
+                    hq_exclude_non_guide_analytics:             'Spain'
+                }
                 excludeNonGuideAnalytics: true
             });*/
 
@@ -88,16 +92,17 @@
             /*//INITIALIZE TO EXCLUDE ANALYTICS EVENTS
             pendo.initialize({
                 visitor: {
-                    id:                                     'Visitor3_ExcludeAllAnalytics',
-                    name:                                   'Rebekah',
-                    favorite_planet:                        'Venus',                    
-                    favorite_season_exclude_all_analytics:  'pasta' 
+                    id:                                         'Visitor_ExcludeAllAnalytics',
+                    name:                                       'Rebekah',
+                    planet:                                     'Venus',                    
+                    favorite_season_exclude_all_analytics:      'Spring' 
                 },
                 account: {
-                    id:           'accountabc_excludeanalyticsevents',
-                    name:         'Account ABC Excludeanalyticsevents'
-                    industry:     'earth'
-                },
+                    id:                                         'Account_ExcludeAllAnalytics',
+                    name:                                       "Rebekah's Company",
+                    industry:                                   'Intellectual Property',
+                    hq_exclude_all_analytics:                   'Canada'
+                }
                 analytics: {
                     excludeEvents: ['load', 'click', 'focus', 'submit', 'change', 'track']
                 }
