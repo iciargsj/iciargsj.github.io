@@ -52,7 +52,7 @@
  
 
             //INITIALIZE TO COLLECT ALL ANALYTICS
-            /*pendo.initialize({
+            pendo.initialize({
                 visitor: {
                     id:                                         'Visitor_IncludeAllAnalytics',
                     name:                                       'Angela',
@@ -65,14 +65,14 @@
                     industry:                                   'Pet Industry',
                     hq_include_all_analytics:                   'US'
                 }
-            });*/
+            });
 
 
 
 
 
             //INITIALIZE TO EXCLUDE NON GUIDE ANALYTICS
-            pendo.initialize({
+            /*pendo.initialize({
                 visitor: {
                     id:                                         'Visitor_ExcludeNonGuideAnalytics',
                     name:                                       'Iciar',
@@ -84,9 +84,9 @@
                     name:                                       "Iciar's Company",
                     industry:                                   'Software',
                     hq_exclude_non_guide_analytics:             'Spain'
-                }
+                },
                 excludeNonGuideAnalytics: true
-            });
+            });*/
 
 
             /*//INITIALIZE TO EXCLUDE ANALYTICS EVENTS
@@ -102,7 +102,7 @@
                     name:                                       "Rebekah's Company",
                     industry:                                   'Intellectual Property',
                     hq_exclude_all_analytics:                   'Canada'
-                }
+                },
                 analytics: {
                     excludeEvents: ['load', 'click', 'focus', 'submit', 'change', 'track']
                 }
