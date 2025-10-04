@@ -37,7 +37,7 @@
 
                 account: {
                     id:           'Test Account 1', // Required if using Pendo Feedback
-                    name:         'Account, Inc',
+                    name:         "Account's name",
                     //is_paying:    'true'// Recommended if using Pendo Feedback
                     //monthly_value:// Recommended if using Pendo Feedback
                     planLevel: 'pro, premium'   // Optional
@@ -49,15 +49,33 @@
                 }
             });
 
-            
+ 
+
+            /*//INITIALIZE TO COLLECT ALL ANALYTICS
+            pendo.initialize({
+                visitor: {
+                    id:                                     'Visitor1_IncludeAllAnalytics',
+                    name:                                   'Angela',
+                    favorite_planet:                        'Earth',                    
+                    favorite_food_include_all_analytics:    'pizza' 
+                },
+                account: {
+                    id:                                     'Account1_IncludeAllAnalytics',
+                    name:                                   "Angela's Company",
+                }
+            });*/
+
+
+
+
+
             /*//INITIALIZE TO EXCLUDE NON GUIDE ANALYTICS
             pendo.initialize({
                 visitor: {
-                    id:              'visitor123_excludenonguideanalytics',
-                    name:            'Visitor 123 Excludenonguideanalytics',
-                    email:           'visitor123_excludenonguideanalytics@pendo.io',
-                    favorite_plant:  'orchid',
-                    favorite_fruit:  'mango'
+                    id:                                     'Visitor2_ExcludeNonGuideAnalytics',
+                    name:                                   'Iciar',
+                    favorite_planet:                        'Saturn',                    
+                    favorite_country_include_all_analytics: 'sushi' 
                 },
                 account: {
                     id:           'account123_excludenonguideanalytics',
@@ -70,16 +88,15 @@
             /*//INITIALIZE TO EXCLUDE ANALYTICS EVENTS
             pendo.initialize({
                 visitor: {
-                    id:              'visitorabc_excludeanalyticsevents',
-                    name:            'Visitor ABC Excludeanalyticsevents',
-                    email:           'visitorabc_excludeanalyticsevents@pendo.io',
-                    favorite_plant:  'tulip',
-                    favorite_fruit:  'cherries'
+                    id:                                     'Visitor3_ExcludeAllAnalytics',
+                    name:                                   'Rebekah',
+                    favorite_planet:                        'Venus',                    
+                    favorite_season_exclude_all_analytics:  'pasta' 
                 },
                 account: {
                     id:           'accountabc_excludeanalyticsevents',
                     name:         'Account ABC Excludeanalyticsevents'
-                    location:     'earth'
+                    industry:     'earth'
                 },
                 analytics: {
                     excludeEvents: ['load', 'click', 'focus', 'submit', 'change', 'track']
